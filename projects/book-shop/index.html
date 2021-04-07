@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="onInit()">
+    <h1>Welcome to the Bookshop!</h1>
+
+    <section class="book-container">
+        <section class="new-book-container">
+            <form class="new-book" onsubmit="onAddBook(event)">
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="price">Price:</label><br>
+                <input type="text" id="price" name="price">
+                <button class="create-book-btn">Create new book</button>
+            </form>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <td class="id" onclick="onSortBooks('id')">ID</td>
+                    <td class="title" onclick="onSortBooks('title')"> Title</td>
+                    <td class="price" onclick="onSortBooks('price')">Price</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+    <section class="page-select">
+        <button onclick="onSetPage(-1)">Back</button>
+        <div class="current-page">0</div>
+        <button onclick="onSetPage(1)">Next</button>
+    </section>
+
+    <section class="modal"></section>
+
+
+    <script src="js/bookshop.storage.js"></script>
+    <script src="js/bookshop.service.js"></script>
+    <script src="js/bookshop.controller.js"></script>
+</body>
+
+</html>

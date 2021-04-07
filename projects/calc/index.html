@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <table>
+
+        <thead>
+            <tr>
+                <td class="screen" colspan="5">0</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>MC</td>
+                <td>MR</td>
+                <td>MS</td>
+                <td>M+</td>
+                <td>M-</td>
+            </tr>
+            <tr>
+                <td onclick="clearAll()">←</td>
+                <td>🇨​​​​​🇪​​​​​</td>
+                <td>🇨</td>
+                <td>±</td>
+                <td>√</td>
+            </tr>
+            <tr>
+                <td onclick="addDigit(7)">7</td>
+                <td onclick="addDigit(8)">8</td>
+                <td onclick="addDigit(9)">9</td>
+                <td onclick="setOp('/')">/</td>
+                <td>%</td>
+            </tr>
+            <tr>
+                <td onclick="addDigit(4)">4</td>
+                <td onclick="addDigit(5)">5</td>
+                <td onclick="addDigit(6)">6</td>
+                <td onclick="setOp('*')">*</td>
+                <td>1/𝓍</td>
+            </tr>
+            <tr>
+                <td onclick="addDigit(1)">1</td>
+                <td onclick="addDigit(2)">2</td>
+                <td onclick="addDigit(3)">3</td>
+                <td onclick="setOp('-')">-</td>
+                <td onclick="calculate()" rowspan="2">=</td>
+            </tr>
+            <tr>
+                <td colspan="2" onclick="addDigit(0)">0</td>
+                <td onclick="addDigit('.')">.</td>
+                <td onclick="setOp('+')">+</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

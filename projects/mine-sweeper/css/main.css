@@ -1,0 +1,138 @@
+body {
+    background-image: url("https://cdn.dribbble.com/users/1431620/screenshots/14549628/media/b4737654105e662c80dafa616f5b9932.jpg");
+    background-size:cover;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    color: black;
+    letter-spacing: 8px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.game-area {
+    background-color: #484838c4;
+    border: rgba(255, 255, 255, 0.198) 2px solid;
+    position: relative;
+    width: fit-content;
+    border-radius: 3%;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.img-area {
+    background-color: #ffffff48;
+    border: rgba(255, 255, 255, 0.198) 2px solid;
+    margin: auto;
+    width: 138px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.play {
+    height: 100px;
+}
+
+.victory {
+    height: 100px;
+}
+
+.game-over {
+    height: 100px;
+}
+
+.time{
+    font-family: 'Creepster', cursive;
+}
+
+.hint-area{
+    height: 22px;
+}
+
+.hint-area img {
+    height: 20px;
+}
+
+table {
+    border: rgba(255, 255, 255, 0.198) 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cell {
+    background-color: #ADAC9A;
+    height: 30px;
+    width: 30px;
+}
+
+.cell:hover {
+    background-color: #ccccc4;
+}
+
+.hide div {
+    opacity: 0%;
+}
+
+.info {
+    font-family: 'Creepster', cursive;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 0px;
+    color: black;
+}
+
+.btn-area {
+    padding: 3px;
+    width: fit-content;
+    margin: auto;
+    border: rgba(255, 255, 255, 0.198) 2px solid;
+}
+
+button {
+    font-family: 'Creepster', cursive;
+    letter-spacing: 3px;
+    font-size: 80%;
+    color: #000000;
+    border-radius: 5%;
+    border-style: none;
+    background-color: #ADAC9A;
+}
+
+button:hover {
+    background-color: #ccccc4;
+}
+
+.safe-click{
+    padding: 3px;
+    width: fit-content;
+    margin: auto;
+    border: rgba(255, 255, 255, 0.198) 2px solid; 
+    border-top: 0px;
+}
+
+
+
+/* util: */
+.click {
+    filter: invert(80%);
+}
+
+.hide {
+    background-color: #838155;
+}
+
+.isMarked {
+    opacity: 100%;
+}
+
+.isSafe{
+    background-color: red;
+}
