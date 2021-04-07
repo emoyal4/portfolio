@@ -5,7 +5,7 @@ $(window).init(function () {
     renderModals()
     $('.btn-play-project')
 })
-
+ 
 
 function renderPortfolio() {
     var strHTMLs = getProjs().map(function (proj) {
