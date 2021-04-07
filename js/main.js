@@ -17,7 +17,7 @@ function renderPortfolio() {
                      <i class="fa fa-plus fa-3x"></i>
                     </div>
                 </div>
-                <img class="img-fluid" src="img/portfolio/${proj.name}-thumbnail.png" alt="">
+                <img class="img-fluid" src="./img/portfolio/${proj.name}-thumbnail.png" alt="">
             </a>
             <div class="portfolio-caption">
                 <h4>${proj.name}</h4>
@@ -49,7 +49,7 @@ function renderModals() {
                     <!-- Project Details Go Here -->
                     <h2>${proj.name}</h2>
                     <p class="item-intro text-muted">${proj.title}</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/${proj.name}-thumbnail.png" alt="">
+                    <img class="img-fluid d-block mx-auto" src="./img/portfolio/${proj.name}-thumbnail.png" alt="">
                     <p>${proj.desc}</p>
                     <ul class="list-inline">
                         <li>Date: ${proj.publishedAt}</li>
